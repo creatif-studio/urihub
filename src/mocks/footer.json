@@ -1,0 +1,130 @@
+[
+  { 
+    "company": {
+      "name": "Company",
+      "content": [
+        {
+          "name": "The Linktree Blog",
+          "address": "/blog"
+        },
+        {
+          "name": "Engineering Blog",
+          "address": "/blog"
+        },
+        {
+          "name": "Marketplace",
+          "address": "/blog"
+        },
+        {
+          "name": "What's New",
+          "address": "/blog"
+        },
+        {
+          "name": "About",
+          "address": "/blog"
+        },
+        {
+          "name": "Press",
+          "address": "/blog"
+        },
+        {
+          "name": "Careers",
+          "address": "/blog"
+        },
+        {
+          "name": "Social Good",
+          "address": "/blog"
+        },
+        {
+          "name": "Contact",
+          "address": "/blog"
+        }
+      ]
+    }
+  },
+  { 
+    "community": {
+      "name": "Community",
+      "content": [
+        {
+          "name": "Linktree Creator Services Program",
+          "address": "/blog"
+        },
+        {
+          "name": "Linktree for Enterprise",
+          "address": "/blog"
+        },
+        {
+          "name": "2022 Creator Report",
+          "address": "/blog"
+        },
+        {
+          "name": "Charities",
+          "address": "/blog"
+        },
+        {
+          "name": "Creator Profile Directory",
+          "address": "/blog"
+        },
+        {
+          "name": "Explore Templates",
+          "address": "/blog"
+        }
+      ]
+    }
+  },
+  { 
+    "support": {
+      "name": "Support",
+      "content": [
+        {
+          "name": "Help Topics",
+          "address": "/blog"
+        },
+        {
+          "name": "Getting Started",
+          "address": "/blog"
+        },
+        {
+          "name": "Linktree Pro",
+          "address": "/blog"
+        },
+        {
+          "name": "Features & How-Tos",
+          "address": "/blog"
+        },
+        {
+          "name": "FAQs",
+          "address": "/blog"
+        },
+        {
+          "name": "Report a Violation",
+          "address": "/blog"
+        }
+      ]
+    }
+  },
+  { 
+    "trushLegal": {
+      "name": "Trust & Legal",
+      "content": [
+        {
+          "name": "Terms & Conditions",
+          "address": "/blog"
+        },
+        {
+          "name": "Privacy Notice",
+          "address": "/blog"
+        },
+        {
+          "name": "Cookie Notice",
+          "address": "/blog"
+        },
+        {
+          "name": "Trust Center",
+          "address": "/blog"
+        }
+      ]
+    }
+  }
+]
