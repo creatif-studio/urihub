@@ -3,7 +3,7 @@ import { context } from '../../context/Context'
 import ItemsListLink from './ItemsListLink';
 
 export default function AddLink({ name, url, id }) {
-  const { updateLink, deleteLink } = context();
+  const { updateLink } = context();
   const inputNameRef = useRef(null);
   const inputUrlRef = useRef(null);
 
@@ -110,7 +110,7 @@ export default function AddLink({ name, url, id }) {
         </div>
       </div>
       <div className='mt-2'>
-        <ItemsListLink />
+        <ItemsListLink id={id}/>
       </div>
     </div>
   );

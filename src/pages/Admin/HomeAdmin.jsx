@@ -1,26 +1,60 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Navbar from '../../components/Admin/Navbar'
 import PhoneSimulator from '../../components/Admin/PhoneSimulator'
 import AlertLive from '../../components/Admin/AlertLive'
 import Logo from '../../assets/logos-sm.png'
 import ListLink from '../../components/Admin/ListLink'
 import Button from '../../elements/Button'
+import { getLink } from '../../hooks/GetLink'
+import { getUserUrl } from '../../hooks/GetUserUrl'
 import { context } from '../../context/Context'
 
 export default function HomeAdmin() {
-  const { link, postLink } = context()
   const linkForm = useRef()
+  const { user, postLink } = context()
   const [show, setShow] = useState(false);
+  const [cekUser, setCekUser] = useState()
+  const [data, setData] = useState()
 
-  console.log(link);
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        await getLink()
+      } catch (error) {
+        throw error
+      }
+    }
+
+    fetchData()
+  }, [])
+  
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await getUserUrl()
+        const findUserLink = response.documents.find(data => data.$id == user.$id)
+        setCekUser(findUserLink)
+        setData(findUserLink.links)
+      } catch (error) {
+        throw error
+      }
+    }
+
+    fetchData()
+  }, [])
+
 
   function handleSubmit(e) {
     e.preventDefault()
 
     const name = linkForm.current.name.value
     const url = linkForm.current.url.value
-
-    postLink(name, url)
+    const obj ={
+      name,
+      url,
+      users: cekUser.$id
+    }
+    postLink(obj)
   }
 
   return (
@@ -82,15 +116,15 @@ export default function HomeAdmin() {
               </div>
 
               <div className='flex flex-col justify-center items-center mt-4 mb-24'>
-                {link ? (
-                  link?.documents?.map((data, index) => (
+                {data?.length > 0 ? (
+                  data.map((data, index) => (
                     <div className='w-full mt-2' key={index}>
                       <ListLink name={data.name} url={data.url} id={data.$id}/>
                     </div>
                   ))
                 ) : (
-                  <div>
-                    <div className='flex justify-center w-10 items-center'>
+                  <div className='flex flex-col justify-center'>
+                    <div className='w-10 items-center mx-auto'>
                       <img className='w-full h-full opacity-20' src={Logo} alt="logo" />
                     </div>
                     <div className='mt-6'>

@@ -13,7 +13,7 @@ const Register = () => {
     const name = registerForm.current.name.value
     const username = registerForm.current.username.value
     const email = registerForm.current.email.value    
-    const password = registerForm.current.password.value    
+    const password = registerForm.current.password.value
     const userInfo = {name, email, username, password}
 
     registerUser(userInfo)

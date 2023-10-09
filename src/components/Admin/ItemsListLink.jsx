@@ -1,6 +1,9 @@
 import React from 'react'
+import { context } from '../../context/Context'
 
-export default function ItemsListLink() {
+export default function ItemsListLink({ id }) {
+  const { deleteLink } = context()
+
   return (
     <div className="flex justify-between">
       <div>
