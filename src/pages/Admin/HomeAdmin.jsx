@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import Navbar from '../../components/Admin/Navbar'
+import Navbar from '../../components/Admin/NavbarAdmin'
 import PhoneSimulator from '../../components/Admin/PhoneSimulator'
 import AlertLive from '../../components/Admin/AlertLive'
 import Logo from '../../assets/logos-sm.png'
@@ -42,7 +42,6 @@ export default function HomeAdmin() {
 
     fetchData()
   }, [])
-
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -119,7 +118,12 @@ export default function HomeAdmin() {
                 {data?.length > 0 ? (
                   data.map((data, index) => (
                     <div className='w-full mt-2' key={index}>
-                      <ListLink name={data.name} url={data.url} id={data.$id}/>
+                      <ListLink 
+                        id={data.$id}
+                        name={data.name} 
+                        url={data.url} 
+                        isShow={data.isShow}
+                      />
                     </div>
                   ))
                 ) : (

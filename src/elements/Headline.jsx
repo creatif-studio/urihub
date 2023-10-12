@@ -7,8 +7,8 @@ export default function Headline(props) {
   const contentStyle = [];
 
   if (className === "isPrimary") {
-    headingStyle.push("text-lime-500");
-    contentStyle.push("text-lime-500");
+    headingStyle.push("text-lime-400");
+    contentStyle.push("text-lime-400");
   } else if (className === "isSecondary") {
     headingStyle.push("text-fuchsia-950");
     contentStyle.push("text-fuchsia-950");
@@ -18,7 +18,7 @@ export default function Headline(props) {
   }
 
   const headingSizeClass = className === "isPrimary"
-    ? "text-8xl font-bold"
+    ? "text-6xl font-bold"
     : className === "isSecondary"
     ? "text-4xl font-bold" 
     : "text-4xl font-bold";

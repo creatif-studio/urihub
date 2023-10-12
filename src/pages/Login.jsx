@@ -29,7 +29,9 @@ const Login = () => {
   return (
     <div>
       <div className='absolute w-32 ms-10 mt-10'>
-        <img src={LogoColor} alt='logo-color' />
+        <Link to="/">
+          <img src={LogoColor} alt='logo-color' />
+        </Link>
       </div>
 
       <div className="flex">

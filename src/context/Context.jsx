@@ -15,7 +15,6 @@ export const ContextProvider = ({children}) => {
   useEffect(() => {
     checkUserStatus()
     getLink()
-    getUserUrl()
   }, [])
 
   async function loginUser(userInfo) {
@@ -108,25 +107,6 @@ export const ContextProvider = ({children}) => {
     setLoading(false)
   }
 
-  async function updateLink(id, datas) {
-    setLoading(true)
-    try{
-      const jsonData = JSON.stringify(datas)
-      await database.updateDocument(
-        import.meta.env.VITE_DATABASE, 
-        import.meta.env.VITE_TABLE_URL, 
-        id,
-        jsonData
-      )
-
-      let data = await database.listDocuments(import.meta.env.VITE_DATABASE, import.meta.env.VITE_TABLE_URL)
-      setLink(data)
-    }catch(error){
-      console.error(error)
-    }
-    setLoading(false) 
-  }
-
   async function deleteLink(id) {
     setLoading(true)
     try{
@@ -144,15 +124,6 @@ export const ContextProvider = ({children}) => {
     setLoading(false) 
   }
 
-  async function getUserUrl() {
-    try {
-      const response = await database.listDocuments(import.meta.env.VITE_DATABASE, import.meta.env.VITE_TABLE_USER)
-      setUserLink(response)
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
   const contextData = {
     user,
     loginUser,
@@ -161,10 +132,8 @@ export const ContextProvider = ({children}) => {
     link,
     getLink,
     postLink,
-    updateLink,
     deleteLink,
-    userLink,
-    getUserUrl
+    userLink
   }
 
   return(
