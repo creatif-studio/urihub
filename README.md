@@ -1,1 +1,2 @@
-# linka-website
+# Sites
+Simple website builder
