@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Account",
+    "content": [
+      {
+        "icon": "fa-regular fa-user",
+        "name": "My Account"
+      },
+      {
+        "icon": "fa-solid fa-circle-dollar-to-slot",
+        "name": "Billing"
+      },
+      {
+        "icon": "fa-solid fa-circle-exclamation",
+        "name": "Cookie preference"
+      }
+    ]
+  },
+  {
+    "title": "Support",
+    "content": [
+      {
+        "icon": "fa-solid fa-circle-exclamation", 
+        "name": "Ask a question"
+      },
+      {
+        "icon": "fa-regular fa-user",
+        "name": "Help Topics"
+      },
+      {
+        "icon": "fa-regular fa-comments",
+        "name": "Submit feedback"
+      }
+    ]
+  }
+]
