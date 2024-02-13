@@ -1,8 +1,8 @@
-Welcome to Uplink
+### Welcome to Uplink
 
 Uplink is a free and open-source alternative to Linktree, designed to help you organize and share multiple links with ease. Say goodbye to the limitations of single-link sharing and embrace the freedom to showcase all your important links in one place.
 
-Features:
+#### Features:
 - Customizable Links: Add, edit, and rearrange your links effortlessly.
 - Responsive Design: Your link page looks great on all devices, ensuring a seamless experience for your visitors.
 - Analytics-Free: We prioritize user privacy and do not track or collect any analytics data.
