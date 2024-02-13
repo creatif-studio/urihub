@@ -1,11 +1,10 @@
-# Linka: Share Anything with Anyone
+Welcome to Uplink
 
-Linka is a versatile tool that enables you to effortlessly share a wide range of content and resources with anyone, anywhere. Whether you need to showcase personal or company profiles, set up stores, send wedding invitations, distribute forms, and manage media.
+Uplink is a free and open-source alternative to Linktree, designed to help you organize and share multiple links with ease. Say goodbye to the limitations of single-link sharing and embrace the freedom to showcase all your important links in one place.
 
-## Features
-- [x] **URLs**: Manage multiple links, making it convenient for others to access your information.
-- [ ] **Profiles**: Create and manage personal or company profiles and share them seamlessly.
-- [ ] **Stores**: Allows you to set up and share your online/offline stores effortlessly.
-- [ ] **Wedding Invitations**: Design and send online invitations for events, meetings, or any occasion.
-- [ ] **Media Gallery**: You can also upload photos to create and manage galleries effortlessly.
-- [ ] **Forms**: Supports survey and quiz form creation, making data collection a breeze.
+Features:
+- Customizable Links: Add, edit, and rearrange your links effortlessly.
+- Responsive Design: Your link page looks great on all devices, ensuring a seamless experience for your visitors.
+- Analytics-Free: We prioritize user privacy and do not track or collect any analytics data.
+- Easy to Use: Simple setup and customization make it accessible to users of all technical levels.
+- Get started today and take control of your online presence with Uplink!
